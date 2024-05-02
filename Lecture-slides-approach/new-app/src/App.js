@@ -3,9 +3,17 @@ import React from 'react'
 // import * as React from 'react'
 
 function App() {
+  const name = "Lennox"
+  const age = 2024 - 2003
   return (
-    <div className="flex justify-center items-center">
-        <h1>Hello React 👍🥳🥳🥳🥳</h1>
+    <div className="flex justify-center items-center flex-col">
+        <h1 className="text-5xl font-bold">Profile</h1>
+        <br/>
+        <p className="text-2xl text-cyan-800">
+          Name: {name}
+          <br/>
+          Age: {age} years old
+        </p>
     </div>
   );
 }
