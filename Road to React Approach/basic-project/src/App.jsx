@@ -1,17 +1,21 @@
 import * as React from 'react'
+import {Route, Routes} from "react-router-dom"
+import Signup from './component/Signup'
+import Home from './component/Home'
+import Login from './component/Login'
 
 const name = "Lennox"
 function App() {
-    const welcome = {
-        title: "Welcome",
-        name: "User"
-    }
  return (
   <div>
-    <h1 className="flex text-3xl text-blue-900 text-center justify-center align-middle"> {welcome.title} {welcome.name} </h1>
-    <label htmlFor="input">Name:</label>
-    <input className="border border-blue-600 focus: ring-cyan-800 ring-2 border-r-2 outline-0" type="text" id="input" />
+    <h1 className="text-3xl font-bold text-cyan-600" >React Route Dom</h1>
+    <Routes>
+    <Route path="/" element={<Home/>} />
+    <Route path="/login" element={<Login/>} />
+    <Route path="/signup" element={<Signup/>} />
+ </Routes>
   </div>
+
  )
 }
 
