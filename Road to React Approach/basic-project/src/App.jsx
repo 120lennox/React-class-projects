@@ -8,7 +8,7 @@ const name = "Lennox"
 function App() {
  return (
   <div>
-    <h1 className="text-3xl font-bold text-cyan-600" >React Route Dom</h1>
+    
     <Routes>
     <Route path="/" element={<Home/>} />
     <Route path="/login" element={<Login/>} />
