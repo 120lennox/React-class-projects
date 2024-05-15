@@ -1,14 +1,15 @@
 import * as React from "react"
 import InputBox from "./components/InputBox"
+import {BrowserRouter, Routes, Route} from "react-router-dom"
+import Home from "./components/Home"
+import About from "./components/About"
+import Signup from "./components/Signup"
 
 function App() {
   return(
     <div>
-      <InputBox type="text" placeholder="enter email"/> <br />
-      <InputBox type="password" placeholder="enter password" />
-      <InputBox type="submit" value="Submit" />
+      <h1>Hello world</h1>
     </div>
-    
   )
 }
 
