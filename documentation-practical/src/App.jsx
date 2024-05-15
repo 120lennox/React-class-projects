@@ -1,30 +1,15 @@
 import * as React from "react"
+import InputBox from "./components/InputBox"
 
 function App() {
-  const user = "Lennox Mountain"
-  const home = {
-    names: "Lennox Mountain",
-    fav_food: "Nsima ya mbewa",
-    age: 2024 - 2003,
-    marital_status: "single",
-    theme: {
-      display: 'flex',
-      justifyContent: 'center',
-      alignItemns: 'center',
-      backgroundColor: 'grey',
-    }
-  }
-  
-  return (
-    <div style={home.theme}>
-      <h1> {user}'s profile </h1>
-      <ul>
-        <li>Favorite food: {home.fav_food} </li>
-        <li>Age: {home.age} </li>
-        <li>Marital status: {home.marital_status} </li>
-      </ul>
+  return(
+    <div>
+      <InputBox type="text" placeholder="enter email"/> <br />
+      <InputBox type="password" placeholder="enter password" />
+      <InputBox type="submit" value="Submit" />
     </div>
-  );
+    
+  )
 }
 
 export default App
